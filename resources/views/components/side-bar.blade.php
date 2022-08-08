@@ -1,6 +1,12 @@
 <nav class="side-nav">
-
-<x-components.nav-links :type = '1'/>
-
-
+    <ul>
+         <x-components.menu-links :type="'1'" />
+         {{-- <x-components.menu-links :type="'1'" /> --}}
+    </ul>
 </nav>
+
+{{-- <nav class="side-nav">
+    <ul>
+        <x-components.menu-links :type="'1'" />
+    </ul>
+</nav> --}}

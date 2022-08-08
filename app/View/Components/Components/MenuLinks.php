@@ -1,10 +1,10 @@
 <?php
-
 namespace App\View\Components\Components;
 
 use Illuminate\View\Component;
+use PhpParser\Node\Stmt\Switch_;
 
-class NavLinks extends Component
+class MenuLinks extends Component
 {
     public $type;
     /**
@@ -14,9 +14,8 @@ class NavLinks extends Component
      */
     public function __construct($type)
     {
-        $this-> $type;
+        $this->type = $type;
     }
-
 
     /**
      * Get the view / contents that represent the component.
@@ -25,22 +24,21 @@ class NavLinks extends Component
      */
     public function render()
     {
-        dd($this->getNavDetails());
-        return view('components.nav-links', $this->getNavDetails());
-
+        return view('components.menu-links',$this->getNavDetails());
     }
-
-
-    public function getNavDetails(){
+    public function getNavDetails()
+    {
         $case = "";
-        switch ($this ->type) {
-            case '1':
-                $this->$case = "side-";
+        switch ($this->type) {
+            case 1:
+                $case = "side-";
                 break;
-            case '2':
-                $this->$case ="";
-                break;
+            case 2:
+                $case = "";
+                    break;
         }
-        return ['case' =>$case];
+        return [
+            "case" => $case
+        ];
     }
 }

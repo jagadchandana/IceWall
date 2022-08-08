@@ -7,8 +7,9 @@
     </div>
     <div class="scrollable">
         <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="x-circle" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+        <ul class="scrollable__content py-2">
 
-        <x-components.nav-links :type = '2'/>
-
+            <x-components.menu-links :type="'2'" />
+        </ul>
     </div>
 </div>
