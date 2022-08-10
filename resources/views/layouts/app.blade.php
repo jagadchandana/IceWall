@@ -8,7 +8,7 @@
 
         <!-- END: CSS Assets-->
         {{-- <x-libraries.styles/> --}}
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js', 'resource/images/*'])
     </head>
     <!-- END: Head -->
     <body class="main">

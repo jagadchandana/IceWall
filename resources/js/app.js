@@ -1,3 +1,9 @@
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
+
 /*
  |--------------------------------------------------------------------------
  | Midone Built-in Components
@@ -15,11 +21,6 @@ import "@left4code/tw-starter/dist/js/modal";
 import "@left4code/tw-starter/dist/js/tab";
 
 
-import Alpine from 'alpinejs';
-
-window.Alpine = Alpine;
-
-Alpine.start();
 
 
 /*
